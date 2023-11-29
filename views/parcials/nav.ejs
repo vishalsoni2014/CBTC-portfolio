@@ -1,0 +1,34 @@
+
+<body class="bg-color">
+
+    <!-- NavBar - start -->
+    <div class="my-navbar">
+      <div class="logo">
+      </div>
+      <div >
+        <table >
+          <tr>
+            <td class=" nav-1">
+            <div class="logo .nav-button"></div>
+            </td>
+            
+            <td class="nav-2">
+              <p class="home active nav-button" onclick="home_get()">Home</p>
+              <p class = "pricing nav-button" onclick="purchase_get()">Pricing</p>
+              <p class="documentation nav-button" onclick="documentation_get()">Documentation</p>
+              <p class ="contact nav-button" onclick="contact_get()">Contact</p>
+              <p class="login nav-button" onclick="nav_login()" id="nav-login">
+              <% 
+                if(session.user) {%> 
+                 <%= session.user.name %>
+                 Profile
+                  <% }
+              else{ %>Login<%}
+              %>
+            </p>
+            
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
