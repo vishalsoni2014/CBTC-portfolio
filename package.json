@@ -1,0 +1,18 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "My portfolio Websute",
+  "main": "server.js",
+  "scripts": {
+    "test": "npm run devStart",
+    "devStart": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "msghive",
+    "msghive.com",
+    "Portfolio"
+  ],
+  "author": "Bikrant Bikram",
+  "license": "ISC"
+}
